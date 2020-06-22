@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header .content-box {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.menu {
+  display: inline-flex;
+}
+
+.menu img {
+  height: 35px;
+  margin: 20px 0 0 110px;
+}
+
+.menu button {
+  padding: 5px 20px;
+  background: darkgreen;
+  color: #fff;
+  font-size: 16px;
+  border: 0;
+  position: absolute;
+  right: 10%;
+  top: 5%;
+}
+
+.menu button .fa {
+  margin-right: 10px;
+}
+
+.banner-text {
+  width: 80%;
+  color: #fff;
+  margin: 16% auto 0;
+  text-align: center;
+}
+
+.banner-text h2 {
+  margin-top: 50px;
+  font-size: 64px;
+}
+
+.banner-text p {
+  font-size: 14px;
+  margin: 20px 0 50px;
+}
+
+.banner-text a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid darkgreen;
+  display: block;
+  padding: 10px;
+  width: 180px;
+  margin: auto;
+  background: darkgreen;
+  transition: 0.5s;
+}
+
+.banner-text a:hover {
+  background: transparent;
+}
+
+/*-----------------Services-------------------*/
+
+.content-box {
+  background: #f4f3ff;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 100px;
+}
+
+h1::after {
+  content: "";
+  background: darkgreen;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 50px;
+}
+
+.services .icon {
+  font-size: 30px;
+  margin: 20px auto;
+  padding: 18px;
+  height: 70px;
+  width: 70px;
+  border: 1px solid darkgreen;
+  border-radius: 50%;
+  color: darkgreen;
+}
+
+.services p {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #777;
+  padding: 20px;
+}
+
+.services span {
+  color: darkgreen;
+  transition: 0.5s;
+}
+
+.services .col-md-3:hover {
+  background: darkgreen;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: -5px 5px 10px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+}
+
+.services .col-md-3:hover .icon {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.services .col-md-3:hover p {
+  color: #fff;
+}
+
+.services .col-md-3:hover span {
+  color: #fff;
+}
+
+/*----------------Features-------------------*/
+
+.features h2 {
+  margin-top: 130px;
+}
+
+.features h2::after {
+  content: "";
+  background: darkgreen;
+  display: block;
+  height: 3px;
+  width: 100px;
+  margin: 10px auto 50px;
+  position: absolute;
+  left: 17px;
+}
+
+.features ul {
+  margin-top: 30px;
+  margin-left: 50px;
+  list-style-type: none;
+}
+
+.features ul li {
+  line-height: 40px;
+  font-size: 14px;
+  position: relative;
+}
+
+.features ul li::after {
+  content: "";
+  height: 7px;
+  width: 7px;
+  background: darkgreen;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 17px;
+  left: -25px;
+}
+
+.features img {
+  margin-top: 130px;
+  /* width: 80.5%;*/
+}
+
+.slider-frame {
+  overflow: hidden;
+  height: 800px;
+  width: 1200px;
+  /*margin-left: 560px;
+  margin-bottom: 20px;*/
+}
+
+@-webkit-keyframes slide_animation {
+  0% {
+    left: 0px;
+  }
+  10% {
+    left: 0px;
+  }
+  20% {
+    left: 1200px;
+  }
+  30% {
+    left: 1200px;
+  }
+  40% {
+    left: 2400px;
+  }
+  50% {
+    left: 2400px;
+  }
+  60% {
+    left: 1200px;
+  }
+  70% {
+    left: 1200px;
+  }
+  80% {
+    left: 0px;
+  }
+  90% {
+    left: 0px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.slide-images {
+  width: 3600px;
+  height: 800px;
+  margin: 0 0 0 -2400px;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+}
+
+a {
+  text-decoration: none;
+}
+.img-fluid {
+  height: 80px;
+  width: 500px;
+  position: relative;
+  float: left;
+}
+/*------------------footer------------------*/
+
+.footer h1 {
+  padding-top: 50px;
+}
+
+.contact-form {
+  padding: 15px;
+}
+
+.form-control {
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+::placeholder {
+  font-size: none;
+}
+
+.contact-form button {
+  border: none !important;
+  background: darkgreen !important;
+  box-shadow: none !important;
+  border-radius: 0;
+}
+
+.contact-info .follow {
+  background-color: #fff;
+  padding: 8px;
+  margin: 15px;
+}
+
+.contact-info .fa {
+  margin: 10px;
+  font-size: 20px !important;
+  color: darkgreen !important;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.follow .fab {
+  margin: 10px;
+  font-size: 20px !important;
+  color: darkgreen !important;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.contact-info span {
+  font-size: 14px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
+}
+
+.fa-heart-o {
+  color: darkgreen;
+  font-size: 17px;
+}
+
+.footer hr {
+  margin-top: 50px;
+  background: darkgreen;
+}
